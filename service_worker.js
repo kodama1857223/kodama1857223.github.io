@@ -25,3 +25,6 @@ self.addEventListener('fetch', function(event) {
             })
     );
 });
+function button(){
+    alert(123);
+}
