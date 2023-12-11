@@ -8,6 +8,8 @@
 </head>
 <body>
   <button onclick="showAlert()">ボタンをクリック</button>
+  <br>
+  <button onclick="redirectToHello()">Go to Hello Page</button>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').then(registration => {
@@ -18,6 +20,10 @@
     }
     function showAlert() {
         alert("1");
+    }
+    function redirectToHello() {
+        // hello.htmlに遷移
+        window.location.href = "hello.html";
     }
   </script>
 </body>
